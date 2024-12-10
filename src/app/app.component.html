@@ -1,4 +1,5 @@
- 
-<app-header></app-header>
-<app-customers></app-customers> <!-- customerCompenent export süreci-5 artık bu component bulunduğu hiyerarşiye göre 
-                                aradaki component html lerinde de bulunabilir. -->
+<a routerLink="">Home</a> | <a routerLink="products">Products</a> | <a routerLink="basket">Basket</a> | <a routerLink="admin">Admin</a>
+<!-- örn admin linki için admin/products verirsek programın ilk açıldığı sayfada admin linki bizi admin içindeki products sayfasına götürür. -->
+<br>
+<router-outlet></router-outlet> <!-- mvc deki renderBody ye karşılık geliyor. -->
+<!-- yukarıdaki başlıklara tıklandığında routerOutlet te istenen sayfa görüntülenecek. -->

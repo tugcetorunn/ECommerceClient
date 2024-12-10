@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout.component';
 import { ComponentsModule } from './components/components.module';
+import { RouterModule } from '@angular/router';
 
 
 // bu layoutModule admin in mvc deki view gibi şablon olarak kullanacağımız module dür. yönetim panelinin tasarımının 
@@ -13,7 +14,8 @@ import { ComponentsModule } from './components/components.module';
   ],
   imports: [
     CommonModule,
-    ComponentsModule
+    ComponentsModule,
+    RouterModule // router-outlet kullanabilmemiz için
   ],
   exports: [
     LayoutComponent, //? componentsModule u bırakıp layoutComponent i buradan kaldırınca da çalışıyor. ??

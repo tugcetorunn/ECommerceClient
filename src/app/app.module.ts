@@ -12,7 +12,7 @@ import { UiModule } from './ui/ui.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, // child lar oluşturulduktan sonra nihai rotaları belirlediğiniz module
     AdminModule, // customerCompenent export süreci-4
     UiModule
 ],
