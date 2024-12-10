@@ -1,10 +1,7 @@
-<ul>
-    <li><a routerLink="/admin">Dashboard</a></li> <!-- /admin diyerek adminin anasayfası olduğunu söylüyoruz. -->
-    <!-- / ifadesi ana domain e kadar olan dizini silip admini yazdırır. yani örn xsite.com/products sayfasındasın. 
-     admin ekranına geçerken xsite.com/products linkinden products ı kaldırır. xsite.com/admin e yönlendirir. -->
-    <!-- admin layout un içinde bunu kullandığımız için linkte admin vermemize gerek yok. -->
-    <li><a routerLink="customers">Customers</a></li> <!-- /admin/customers verince de çalışıyor. -->
-    <li><a routerLink="orders">Orders</a></li>
-    <li><a routerLink="products">Products</a></li>
-    <li><a routerLink="">Return the site</a></li> <!-- xsite.com a (ui) yönlendirir. -->
-</ul>
+<mat-list role="list">
+    <a mat-list-item role="listitem" routerLink="/admin">Dashboard</a> <!-- 1. kullanım yolu -->
+    <a mat-list-item role="listitem" routerLink="customers">Customers</a>
+    <a mat-list-item role="listitem" routerLink="orders">Orders</a>
+    <a mat-list-item role="listitem" routerLink="products">Products</a>
+    <mat-list-item role="listitem"><a routerLink="">Return the site</a></mat-list-item> <!-- 2. kullanım yolu -->
+  </mat-list>

@@ -4,6 +4,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
+import {MatListModule} from '@angular/material/list';
 
 
 // bir sayfanın ya da bölümün, componentin kendine ait componentleri varsa bunların yönetimini sağlamak adına 
@@ -17,7 +18,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule // routerLink attribute ünün çalıştırılması için
+    RouterModule, // routerLink attribute ünün çalıştırılması için
+    MatListModule
   ],
   exports: [
     HeaderComponent,
