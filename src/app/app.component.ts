@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+// jquery entegrasyonunu test etmek için;
+declare var $: any
 
 @Component({
   selector: 'app-root',
@@ -8,3 +10,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ECommerceClient';
 }
+
+// mesaj penceresi çıkarma;
+// $(document).ready(() => {
+//   alert("jquery deneme")
+// })

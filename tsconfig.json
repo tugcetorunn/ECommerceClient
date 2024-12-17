@@ -5,7 +5,7 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
+    "strict": false, // class elemanlarına kullanıldığı yerde default değer atama zorunluluğu veriyor bu da hatalara neden oluyordu. bu yüzden false durumuna getirdik. hata yeri bknz: alertify.service.ts / message() / const result / [options.messageType]
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
